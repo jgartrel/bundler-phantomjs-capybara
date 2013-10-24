@@ -1,4 +1,4 @@
-# Ruby sample app (with Bundler)
+# Bundler sample app
 
 This is a sample app designed to be a reference implementation for Bundler
 deployment using .rbenv to select ruby versions.  More details on deploying
