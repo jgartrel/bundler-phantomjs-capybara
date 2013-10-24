@@ -26,6 +26,18 @@ This part of the install will make the project, at a minimum, machine specific, 
 
 ## Running the app
 
-Simply run your app using 'bundle exec' or from the binstub.
+Ensure that rbenv is in your path and simply run your app using 'bundle exec' or from the binstub.
 
+    $ export PATH=~/.rbenv/shims:~/.rbenv/bin:"$PATH"
     $ ./bin/rake
+
+## Appendix A: Install rbenv
+
+Rbenv can be installed using the instructions located here: https://github.com/sstephenson/rbenv .  In our build environments, rbenv was initailly installed using the following proceedure, with an 'rbenv install' for each approved ruby version.
+
+    $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+    $ export PATH=~/.rbenv/shims:~/.rbenv/bin:"$PATH"
+    $ rbenv install 1.9.3-p448
+    $ rbenv rehash
