@@ -42,4 +42,8 @@ Rbenv can be installed using the instructions located here: https://github.com/s
 
     $ export PATH=~/.rbenv/shims:~/.rbenv/bin:"$PATH"
     $ rbenv install 1.9.3-p448
+    $ echo 1.9.3-p448 >~/.rbenv/version
+    $ gem install -v 1.3.5 bundler
     $ rbenv rehash
+
+A cached copy exists here: https://github.com/ffdc-scm/rbenv-x86_64-linux.git
