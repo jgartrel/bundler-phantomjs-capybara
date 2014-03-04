@@ -47,3 +47,7 @@ Rbenv can be installed using the instructions located here: https://github.com/s
     $ rbenv rehash
 
 A cached copy exists here: https://github.com/ffdc-scm/rbenv-x86_64-linux.git
+
+NOTE: When running the above on linux use the following yum packages:
+
+    $ yum install -y gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel
