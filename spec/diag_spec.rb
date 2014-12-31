@@ -15,6 +15,9 @@ Capybara.default_wait_time = 15
 describe "Testing Driver", :type => :feature do
 
   it "can access google" do
+    visit "/"
+    expect(page).to have_field 'q'
+    expect(page).to have_button 'Google Search'
   end
 
   it "can make a simple query" do
